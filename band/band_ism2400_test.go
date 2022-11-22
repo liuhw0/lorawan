@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/brocaar/lorawan"
+	"github.com/liuhw0/lorawan"
 	"github.com/stretchr/testify/require"
 )
 

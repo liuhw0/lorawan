@@ -3,7 +3,7 @@ package band
 import (
 	"time"
 
-	"github.com/brocaar/lorawan"
+	"github.com/liuhw0/lorawan"
 )
 
 type in865Band struct {

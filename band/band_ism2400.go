@@ -3,7 +3,7 @@ package band
 import (
 	"time"
 
-	"github.com/brocaar/lorawan"
+	"github.com/liuhw0/lorawan"
 )
 
 // see: https://lora-developers.semtech.com/library/tech-papers-and-guides/physical-layer-proposal-2.4ghz

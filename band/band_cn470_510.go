@@ -4,7 +4,7 @@ import (
 	"encoding/binary"
 	"time"
 
-	"github.com/brocaar/lorawan"
+	"github.com/liuhw0/lorawan"
 )
 
 type cn470Band struct {
@@ -17,7 +17,7 @@ func (b *cn470Band) Name() string {
 
 func (b *cn470Band) GetDefaults() Defaults {
 	return Defaults{
-		RX2Frequency:     505300000,
+		RX2Frequency:     486900000,
 		RX2DataRate:      0,
 		ReceiveDelay1:    time.Second,
 		ReceiveDelay2:    time.Second * 2,
@@ -248,7 +248,7 @@ func newCN470Band(repeaterCompatible bool) (Band, error) {
 	// initialize downlink channels
 	for i := uint32(0); i < 48; i++ {
 		b.downlinkChannels[i] = Channel{
-			Frequency: 500300000 + (i * 200000),
+			Frequency: 483900000 + (i * 200000),
 			MinDR:     0,
 			MaxDR:     5,
 			enabled:   true,
